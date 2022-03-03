@@ -1,58 +1,65 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
 
 body {
-    font-family: 'Comfortaa', cursive;
+  font-family: 'Comfortaa', cursive;
 }
 
 /* resume */
 
 #resume a {
-    color: #f8f9fa;
-    text-decoration: none;
+  color: #f8f9fa;
+  text-decoration: none;
+}
+
+/* services */
+
+.services-description button a {
+  text-decoration: none;
+  color: #f8f9fa;
 }
 
 /* projects */
 .projects .accordion-item {
-    background-color: #f8f9fa;
+  background-color: #f8f9fa;
 }
 
 .projects .accordion-item .accordion-button {
-    background-color: #f8f9fa;
-    color: black;
+  background-color: #f8f9fa;
+  color: black;
 }
 
 .projects .accordion-item a {
-    color: #f8f9fa;
-    text-decoration: none;
+  color: #f8f9fa;
+  text-decoration: none;
 }
 
 /* contacts */
-.contacts-container a{
-    color: #f8f9fa;
-    text-decoration: none;
+.contacts-container a {
+  color: #f8f9fa;
+  text-decoration: none;
 }
 
 @media only screen and (max-width: 414px) {
-    #bio p {
-        font-size: 2.7vh;
-        width: 100%;
-        min-width: 40vh;
-    }
-    
-    #bio-text {
-        padding-top: 5vh;
-    }
-
-    #services .card {
-        margin-top: 1.5vh;
-    }
-
-    #projects .accordion-body p{
-        font-size: 2vh;
-        margin-bottom: 1.5vh;
-    }
-
-    #contact-mail {
-        font-size: 2.7vh;
-    }
+  #bio p {
+    font-size: 2.7vh;
+    width: 100%;
+    min-width: 40vh;
   }
+
+  #bio-text {
+    padding-top: 5vh;
+  }
+
+  #services .card {
+    margin-top: 1.5vh;
+  }
+
+  #projects .accordion-body p {
+    font-size: 2vh;
+    margin-bottom: 1.5vh;
+  }
+
+  #contact-mail {
+    font-size: 2.7vh;
+  }
+}
