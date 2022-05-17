@@ -59,8 +59,8 @@ body {
   background-clip: text;
   -webkit-text-fill-color: transparent;
   background-repeat: no-repeat;
-  background-size: 80%;
-  animation: shine 4s linear infinite;
+  background-size: 90%;
+  animation: shine 2s linear infinite;
 }
 
 @keyframes shine {
@@ -73,6 +73,14 @@ body {
 }
 
 @media only screen and (max-width: 414px) {
+
+  #greetings {
+    height: 100vh;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+  }
+
   #bio p {
     font-size: 2.7vh;
     width: 100%;
@@ -94,5 +102,9 @@ body {
 
   #contact-mail {
     font-size: 2.7vh;
+  }
+
+  #bioHead h2 {
+    font-size: 30px;
   }
 }
