@@ -18,6 +18,10 @@ body {
   color: #f8f9fa;
 }
 
+#services .card {
+  height: 300px;
+}
+
 /* projects */
 .projects .accordion-item {
   background-color: #f8f9fa;
