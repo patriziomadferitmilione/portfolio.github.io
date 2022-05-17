@@ -2,6 +2,14 @@
 
 body {
   font-family: 'Comfortaa', cursive;
+  overflow-x: hidden;
+}
+
+#greetings {
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 }
 
 /* resume */
@@ -74,11 +82,24 @@ body {
 
 @media only screen and (max-width: 414px) {
 
+  body {
+    overflow-x: hidden;
+  }
+
+  #navbar {
+    overflow-x: hidden;
+  }
+
+  nav {
+    overflow-x: hidden;
+  }
+
   #greetings {
-    height: 100vh;
-    display: flex;
-    align-items: center;
-    justify-content: center;
+    overflow-x: hidden;
+  }
+
+  #resume {
+    overflow-x: hidden;
   }
 
   #bio p {
@@ -106,5 +127,6 @@ body {
 
   #bioHead h2 {
     font-size: 30px;
+    overflow-x: hidden;
   }
 }
