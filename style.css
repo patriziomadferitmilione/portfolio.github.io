@@ -134,6 +134,7 @@ body {
   }
 
   #bioHead h2 {
+    height: fit-content;
     font-size: 30px;
     overflow-x: hidden;
   }
