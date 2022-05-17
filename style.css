@@ -19,6 +19,13 @@ body {
   text-decoration: none;
 }
 
+#resume button {
+  width: 220px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
 /* services */
 
 .services-description button a {
