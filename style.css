@@ -80,7 +80,11 @@ body {
   }
 }
 
-@media only screen and (max-width: 414px) {
+@media only screen and (max-width: 420px) {
+
+  html {
+    overflow-x: hidden;
+  }
 
   body {
     overflow-x: hidden;
@@ -103,13 +107,17 @@ body {
   }
 
   #bio p {
-    font-size: 2.7vh;
+    font-size: 2.3vh;
     width: 100%;
     min-width: 40vh;
   }
 
   #bio-text {
     padding-top: 5vh;
+  }
+
+  #services {
+    overflow-x: hidden;
   }
 
   #services .card {
