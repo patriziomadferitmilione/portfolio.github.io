@@ -17,6 +17,7 @@
       href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.3.0/font/bootstrap-icons.css"
     />
     <link rel="stylesheet" href="./style.css" />
+    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
     <title>Patrizio Milione</title>
   </head>
   <body>
@@ -77,7 +78,7 @@
 
     <!-- BIO -->
 
-    <section class="py-5" id="bio">
+    <section  class="py-5" id="bio" data-aos="zoom-in">
       <div class="container">
         <div class="row justify-content-between align-items-center">
           <div class="col-md col-sm-12">
@@ -107,7 +108,7 @@
 
     <!-- CV -->
 
-    <section class="bg-dark p-5 text-center" id="resume">
+    <section class="bg-dark p-5 text-center" id="resume" data-aos="flip-up">
       <h2 class="text-warning">Resume</h2>
       <p class="lead text-light p-3">
         I've always been very curious, take a look at where it led me in life.
@@ -159,7 +160,7 @@
 
     <!-- PROJECTS -->
 
-    <section class="projects p-5 pb-5 bg-dark" id="projects">
+    <section class="projects p-5 pb-5 bg-dark" id="projects" data-aos="flip-right">
 
       <h1 class="text-center text-warning pb-2">Projects</h1>
 
@@ -500,9 +501,11 @@
 
     <!-- SERVICES -->
 
-    <h1 class="text-center p-5 pb-4">Website Building</h1>
+    
+    <section class="pb-5" id="services" data-aos="fade-right">
+      <h1 class="text-center p-5 pb-4">Website Building</h1>
 
-    <section class="pb-5" id="services">
+
       <div class="container">
         <div class="row text-center">
           <div class="col-md">
@@ -565,9 +568,9 @@
       </div>
     </section>
 
-    <!-- PROJECTS -->
+    <!-- WEBSITES -->
 
-    <section class="projects p-5 pb-5 bg-dark" id="projects">
+    <section class="projects p-5 pb-5 bg-dark" data-aos="fade-left">
       
 
       <!-- SAMPLES -->
@@ -751,7 +754,7 @@
 
     <!-- CONTACTS -->
 
-    <div class="contacts-container bg-light py-5 px-4" id="contacts">
+    <div class="contacts-container bg-light py-5 px-4" id="contacts" data-aos="flip-down">
       <div class="card bg-dark">
         <div class="card-header text-warning text-center pt-4">
           <h1>Get in touch</h1>
@@ -770,11 +773,15 @@
       </div>
     </div>
 
+  
+
+    
     <script
       src="https://cdn.jsdelivr.net/npm/bootstrap@5.1.0/dist/js/bootstrap.bundle.min.js"
       integrity="sha384-U1DAWAznBHeqEIlVSCgzq+c9gqGAJn5c/t99JyeKa9xxaYpSvHU5awsuZVVFIhvj"
       crossorigin="anonymous"
     ></script>
+    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
     <script src="./script.js"></script>
   </body>
 </html>
