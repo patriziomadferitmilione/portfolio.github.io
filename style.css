@@ -115,7 +115,16 @@ body {
   }
 }
 
-@media only screen and (max-width: 420px) {
+@media only screen and (max-width: 1300px) {
+  #bioHead h2 {
+    font-size: 130px;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(25%, 90%);
+  }
+}
+
+@media only screen and (max-width: 450px) {
 
   html {
     overflow-x: hidden;
