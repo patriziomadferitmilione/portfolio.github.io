@@ -45,9 +45,6 @@
               <a href="#resume" class="nav-link">Resume</a>
             </li>
             <li class="nav-item">
-              <a href="#blockchain" class="nav-link">Blockchain</a>
-            </li>
-            <li class="nav-item">
               <a href="#projects" class="nav-link">Projects</a>
             </li>
             <li class="nav-item">
@@ -69,7 +66,6 @@
           <div>
             <h1>Hi, this is <span class="text-warning">Pat</span></h1>
             <h3>Front End Developer</h3>
-            <h3>Blockchain Developer</h3>
           </div>
           <img class="img-fluid w-50" src="./img/greeting.svg" alt="" />
         </div>
@@ -129,7 +125,7 @@
             <div class="container my-1">
               <button class="btn btn-secondary btn-lg" type="button">
                 <a href="./bio.html"
-                  ><i class="bi bi-file-person"></i> Cover Letter</a
+                  ><i class="bi bi-camera-reels-fill"></i> Lifestory</a
                 >
               </button>
             </div>
@@ -148,34 +144,26 @@
       </div>
     </section>
 
-    <!-- BLOCKCHAIN -->
-
-    <section class="text-center p-5 pb-5 bg-light" id="blockchain">
-      <h1>Blockchain</h1>
-      <br>
-      <br>
-      <h4>Coming soon...</h4>
-    </section>
 
 
     <!-- PROJECTS -->
 
    
 
-    <section class="projects p-5 pb-5 bg-dark" id="projects" data-aos="flip-right">
+    <section class="projects p-5 pb-5 bg-light" id="projects" data-aos="flip-down">
 
       <h1 class="text-center text-warning pb-2">Projects</h1>
 
-      <p class="text-light text-center pb-3">
+      <p class="text-center pb-3">
         I included every single project I made since I started coding,
         <br />
         from the very simple small ones, to the bigger and more complex ones, in
         chronological order.
       </p>
-
+    </section>
 
       <!-- REACT -->
-
+    <section class="projects p-5 pb-5 bg-dark" id="projects" data-aos="flip-right">
       <h3 class="text-center text-warning pb-2 mt-5">React / React Native</h3>
       
       <div class="accordion" id="react-accordion">
@@ -293,6 +281,37 @@
               <button class="btn-sm btn-secondary mt-2">
                 <a
                   href="https://patriziomadferitmilione.github.io/todo/"
+                  target="_blank"
+                  ><i class="bi bi-window"></i> Go to app</a
+                >
+              </button>
+            </div>
+          </div>
+        </div>
+        <div class="accordion-item">
+          <h2 class="accordion-header" id="countdown">
+            <button
+              class="accordion-button"
+              type="button"
+              data-bs-toggle="collapse"
+              data-bs-target="#collapseThirteen"
+              aria-expanded="false"
+              aria-controls="collapseThirteen"
+            >
+              <strong>Pat Maps</strong>
+            </button>
+          </h2>
+          <div
+            id="collapseThirteen"
+            class="accordion-collapse collapse"
+            aria-labelledby="headingThirteen"
+            data-bs-parent="#projects-accordion"
+          >
+            <div class="accordion-body">
+              <p>Built with React. Maps App that shows Restaurants, Hotels and Attractions around the location of the device with which it's opened. Also displays info about the places. Implemented with APIs from Google and RapidAPI.</p>
+              <button class="btn-sm btn-secondary mt-2">
+                <a
+                  href="https://pat-maps.netlify.app/"
                   target="_blank"
                   ><i class="bi bi-window"></i> Go to app</a
                 >
