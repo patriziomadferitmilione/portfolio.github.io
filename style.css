@@ -135,6 +135,7 @@ body {
   height: 100px;
   transform: rotateX(70deg) translate3d(150px, 0px, -180px);
   animation: wave6 1s ease-in-out -2000ms infinite alternate;
+  border-radius: 50px;
 }
 
 @keyframes wave6 {
@@ -210,6 +211,7 @@ body {
   height: 40px;
   transform: rotateX(70deg) translate3d(180px, 0px, -210px);
   animation: wave2 1s ease-in-out -2400ms infinite alternate;
+  border-radius: 50px;
 }
 
 @keyframes wave2 {
@@ -282,6 +284,9 @@ body {
     transform:translateX(25%);
   }
 }
+
+/* 5 */
+
 
 
 @media only screen and (max-width: 1300px) {
