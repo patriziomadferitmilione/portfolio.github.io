@@ -84,6 +84,7 @@ body {
   position: absolute;
   color: #ffc107;
   transform: translate(10%, 80%);
+  margin-left: -70px;
 }
 
 #bioHead h2:nth-child(1) {
@@ -108,7 +109,7 @@ body {
   position: absolute;
   color: #ffc107;
   transform: translate(10%, 80%);
-  padding-left: 220px;
+  padding-left: 170px;
 }
 
 #MusicHead h2:nth-child(1) {
