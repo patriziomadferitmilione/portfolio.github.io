@@ -1,7 +1,11 @@
 @import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
 
+
 body {
   font-family: 'Comfortaa', cursive;
+}
+
+.page-container {
   overflow-x: hidden;
 }
 
@@ -58,14 +62,21 @@ body {
 }
 
 /* contacts */
+.contacts-container {
+  overflow-x: hidden;
+}
+
 .contacts-container a {
   color: #f8f9fa;
   text-decoration: none;
 }
 
+/* BIO */
+
 #bioHead {
   height: 100vh;
   position: relative;
+  overflow-x: hidden;
 }
 
 #bioHead h2 {
@@ -81,6 +92,31 @@ body {
 }
 
 #bioHead h2:nth-child(2) {
+  color: #ffc107;
+  animation: animate 4s ease-in-out infinite;
+}
+
+/* MUSIC */
+
+#MusicHead {
+  height: 100vh;
+  position: relative;
+}
+
+#MusicHead h2 {
+  font-size: 200px;
+  position: absolute;
+  color: #ffc107;
+  transform: translate(10%, 80%);
+  padding-left: 220px;
+}
+
+#MusicHead h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffc107;
+}
+
+#MusicHead h2:nth-child(2) {
   color: #ffc107;
   animation: animate 4s ease-in-out infinite;
 }
@@ -285,12 +321,18 @@ body {
   }
 }
 
-/* 5 */
-
-
+/* MOBILE RESPONSIVENESS HANDLING */
 
 @media only screen and (max-width: 1300px) {
+
   #bioHead h2 {
+    font-size: 130px;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(25%, 90%);
+  }
+  
+  #MusicHead h2 {
     font-size: 130px;
     position: absolute;
     color: #ffc107;
@@ -298,30 +340,50 @@ body {
   }
 }
 
+@media only screen and (max-width: 840px) {
+
+  #bioHead h2 {
+    font-size: 120px;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(0%, 250%);
+  }
+
+  #MusicHead h2 {
+    font-size: 150px;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(-12%, 200%);
+  }
+
+}
+
+@media only screen and (max-width: 768px) {
+
+  #bioHead h2 {
+      font-size: 110px;
+      position: absolute;
+      color: #ffc107;
+      transform: translate(0%, 200%);
+    }
+  
+    #MusicHead h2 {
+      font-size: 150px;
+      position: absolute;
+      color: #ffc107;
+      transform: translate(-15%, 150%);
+    }
+
+}
+
 @media only screen and (max-width: 450px) {
 
-  html {
-    overflow-x: hidden;
-  }
-
   body {
-    overflow-x: hidden;
-  }
-
-  #navbar {
-    overflow-x: hidden;
+    max-width: 450px;
   }
 
   nav {
-    overflow-x: hidden;
-  }
-
-  #greetings {
-    overflow-x: hidden;
-  }
-
-  #resume {
-    overflow-x: hidden;
+    max-width: 450px;
   }
 
   #bio p {
@@ -332,10 +394,6 @@ body {
 
   #bio-text {
     padding-top: 5vh;
-  }
-
-  #services {
-    overflow-x: hidden;
   }
 
   #services .card {
@@ -363,13 +421,54 @@ body {
     color: #ffc107;
     animation: animate 2s ease-in-out infinite;
   }
+  
+  #MusicHead h2 {
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(-40%, 250%);
+  }
+
+  #MusicHead h2:nth-child(2) {
+    color: #ffc107;
+    animation: animate 2s ease-in-out infinite;
+  }
 
   .view {
     display: none;
   }
 
-
   .view2 {
     display: none;
+  }
+
+  #contact-mail {
+    font-size: 15px;
+  }
+}
+
+@media only screen and (max-width: 350px) {
+
+  #bioHead h2 {
+      font-size: 43px;
+      font-weight: bold;
+      position: absolute;
+      color: #ffc107;
+      transform: translate(-5%, 270%);
+    }
+
+  #MusicHead h2 {
+      font-size: 80px;
+      font-weight: bold;
+      position: absolute;
+      color: #ffc107;
+      transform: translate(-49%, 150%);
+    }
+
+  #resume .container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
   }
 }
