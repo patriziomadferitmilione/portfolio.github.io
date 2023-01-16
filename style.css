@@ -3,6 +3,7 @@
 
 body {
   font-family: 'Comfortaa', cursive;
+  overflow-x: hidden;
 }
 
 .page-container {
@@ -83,7 +84,7 @@ body {
   font-size: 200px;
   position: absolute;
   color: #ffc107;
-  transform: translate(10%, 80%);
+  transform: translate(15%, 80%);
   margin-left: -70px;
 }
 
@@ -108,7 +109,7 @@ body {
   font-size: 200px;
   position: absolute;
   color: #ffc107;
-  transform: translate(10%, 80%);
+  transform: translate(30%, 80%);
   padding-left: 170px;
 }
 
@@ -347,32 +348,32 @@ body {
     font-size: 120px;
     position: absolute;
     color: #ffc107;
-    transform: translate(0%, 250%);
+    transform: translate(10%, 290%);
   }
 
   #MusicHead h2 {
     font-size: 150px;
     position: absolute;
     color: #ffc107;
-    transform: translate(-12%, 200%);
+    transform: translate(-5%, 230%);
   }
 
 }
 
-@media only screen and (max-width: 768px) {
+@media only screen and (max-width: 770px) {
 
   #bioHead h2 {
       font-size: 110px;
       position: absolute;
       color: #ffc107;
-      transform: translate(0%, 200%);
+      transform: translate(10%, 250%);
     }
   
     #MusicHead h2 {
       font-size: 150px;
       position: absolute;
       color: #ffc107;
-      transform: translate(-15%, 150%);
+      transform: translate(-10%, 180%);
     }
 
 }
@@ -415,7 +416,7 @@ body {
     font-weight: bold;
     position: absolute;
     color: #ffc107;
-    transform: translate(0%, 400%);
+    transform: translate(28%, 490%);
   }
 
   #bioHead h2:nth-child(2) {
@@ -428,7 +429,7 @@ body {
     font-weight: bold;
     position: absolute;
     color: #ffc107;
-    transform: translate(-40%, 250%);
+    transform: translate(-30%, 290%);
   }
 
   #MusicHead h2:nth-child(2) {
@@ -449,6 +450,42 @@ body {
   }
 }
 
+@media only screen and (max-width: 395px) {
+  #bioHead h2 {
+    font-size: 50px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(21%, 410%);
+  }
+
+  #bioHead h2:nth-child(2) {
+    color: #ffc107;
+    animation: animate 2s ease-in-out infinite;
+  }
+  
+  #MusicHead h2 {
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(-33%, 250%);
+  }
+
+  #MusicHead h2:nth-child(2) {
+    color: #ffc107;
+    animation: animate 2s ease-in-out infinite;
+  }
+
+  .view {
+    display: none;
+  }
+
+  .view2 {
+    display: none;
+  }
+}
+
 @media only screen and (max-width: 350px) {
 
   #bioHead h2 {
@@ -464,7 +501,7 @@ body {
       font-weight: bold;
       position: absolute;
       color: #ffc107;
-      transform: translate(-49%, 150%);
+      transform: translate(-43%, 150%);
     }
 
   #resume .container {
