@@ -1,6 +1,20 @@
 // SCROLL ANIMATIONS
 AOS.init();
 
+// NAVBAR CLOSING
+
+// Get all the links in the navbar
+var navDiv = document.getElementById('navbar');
+
+navDiv.addEventListener('click', function() {
+ 
+  if (navDiv.classList.contains('show')) {
+    navDiv.classList.remove('show');
+  } else {
+    navDiv.classList.add('show')
+  }
+
+});
 
 // SCREEN SIZE
 var w = window.innerWidth;
