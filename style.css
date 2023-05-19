@@ -1,8 +1,7 @@
-@import url('https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap');
-
+@import url("https://fonts.googleapis.com/css2?family=Comfortaa:wght@300;400;700&display=swap");
 
 body {
-  font-family: 'Comfortaa', cursive;
+  font-family: "Comfortaa", cursive;
   overflow-x: hidden;
 }
 
@@ -15,6 +14,21 @@ body {
   display: flex;
   align-items: center;
   justify-content: center;
+}
+
+a {
+  text-decoration: none;
+  color: #f8f9fa;
+}
+
+/* navbar */
+
+.navbar-brand {
+  padding-left: 10px;
+}
+
+#navbar {
+  padding-left: 10px;
 }
 
 /* resume */
@@ -123,6 +137,32 @@ body {
   animation: animate 4s ease-in-out infinite;
 }
 
+/* RESOURCES */
+
+#ResourcesHead {
+  height: 100vh;
+  position: relative;
+  overflow-x: hidden;
+}
+
+#ResourcesHead h2 {
+  font-size: 200px;
+  position: absolute;
+  color: #ffc107;
+  transform: translate(25%, 80%);
+  margin-left: -70px;
+}
+
+#ResourcesHead h2:nth-child(1) {
+  color: transparent;
+  -webkit-text-stroke: 2px #ffc107;
+}
+
+#ResourcesHead h2:nth-child(2) {
+  color: #ffc107;
+  animation: animate 4s ease-in-out infinite;
+}
+
 /* BACKGROUND ANIMATIONS */
 
 /* 1 */
@@ -132,7 +172,6 @@ body {
   border-radius: 100%;
   opacity: 0.4;
 }
-
 
 /* 2 */
 
@@ -164,11 +203,11 @@ body {
   box-sizing: border-box;
 }
 
-
 .kk6 {
   border: 15px solid #ffc107;
   border-color: #ffc107;
-  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7, 0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
+  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7,
+    0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
   width: 100px;
   height: 100px;
   transform: rotateX(70deg) translate3d(150px, 0px, -180px);
@@ -184,7 +223,8 @@ body {
 .kk7 {
   border: 15px solid #ffc107;
   border-color: #ffc107;
-  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7, 0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
+  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7,
+    0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
   width: 40px;
   height: 40px;
   transform: rotateX(70deg) translate3d(180px, 0px, -210px);
@@ -225,11 +265,11 @@ body {
   box-sizing: border-box;
 }
 
-
 .kk1 {
   border: 15px solid #ffc107;
   border-color: #ffc107;
-  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7, 0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
+  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7,
+    0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
   width: 100px;
   height: 100px;
   transform: rotateX(70deg) translate3d(150px, 0px, -180px);
@@ -244,7 +284,8 @@ body {
 .kk2 {
   border: 15px solid #ffc107;
   border-color: #ffc107;
-  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7, 0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
+  box-shadow: 0 1px 0 white, inset 0 5px 0px #9db1b7, inset 0 10px 0px #9db1b7,
+    0 5px 0 #abbdc1, 0 10px 0 #abbdc1;
   width: 40px;
   height: 40px;
   transform: rotateX(70deg) translate3d(180px, 0px, -210px);
@@ -294,56 +335,62 @@ body {
 /* 4 */
 
 .bg {
-  animation:slide 3s ease-in-out infinite alternate;
+  animation: slide 3s ease-in-out infinite alternate;
   background-image: linear-gradient(-20deg, #ffc107 50%, #000 50%);
-  bottom:0;
-  left:-100%;
-  opacity:.5;
-  position:fixed;
-  right:-50%;
-  top:0;
-  z-index:-1;
+  bottom: 0;
+  left: -100%;
+  opacity: 0.5;
+  position: fixed;
+  right: -50%;
+  top: 0;
+  z-index: -1;
 }
 
 .bg2 {
-  animation-direction:alternate-reverse;
-  animation-duration:4s;
+  animation-direction: alternate-reverse;
+  animation-duration: 4s;
 }
 
 .bg3 {
-  animation-duration:5s;
+  animation-duration: 5s;
 }
 
 @keyframes slide {
   0% {
-    transform:translateX(-25%);
+    transform: translateX(-25%);
   }
   100% {
-    transform:translateX(25%);
+    transform: translateX(25%);
   }
 }
 
 /* MOBILE RESPONSIVENESS HANDLING */
 
 @media only screen and (max-width: 1300px) {
-
   #bioHead h2 {
     font-size: 130px;
     position: absolute;
     color: #ffc107;
     transform: translate(25%, 90%);
   }
-  
+
   #MusicHead h2 {
     font-size: 130px;
     position: absolute;
     color: #ffc107;
     transform: translate(25%, 90%);
   }
+
+  #ResourcesHead h2 {
+    font-size: 140px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(7%, 230%);
+  }
 }
 
 @media only screen and (max-width: 840px) {
-
   #bioHead h2 {
     font-size: 120px;
     position: absolute;
@@ -358,28 +405,40 @@ body {
     transform: translate(-5%, 230%);
   }
 
+  #ResourcesHead h2 {
+    font-size: 140px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(7%, 230%);
+  }
 }
 
 @media only screen and (max-width: 770px) {
-
   #bioHead h2 {
-      font-size: 110px;
-      position: absolute;
-      color: #ffc107;
-      transform: translate(10%, 250%);
-    }
-  
-    #MusicHead h2 {
-      font-size: 150px;
-      position: absolute;
-      color: #ffc107;
-      transform: translate(-10%, 180%);
-    }
+    font-size: 110px;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(10%, 250%);
+  }
 
+  #MusicHead h2 {
+    font-size: 150px;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(-10%, 180%);
+  }
+  
+  #ResourcesHead h2 {
+    font-size: 120px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(12%, 250%);
+  }
 }
 
 @media only screen and (max-width: 450px) {
-
   body {
     max-width: 450px;
   }
@@ -423,7 +482,7 @@ body {
     color: #ffc107;
     animation: animate 2s ease-in-out infinite;
   }
-  
+
   #MusicHead h2 {
     font-size: 80px;
     font-weight: bold;
@@ -435,6 +494,14 @@ body {
   #MusicHead h2:nth-child(2) {
     color: #ffc107;
     animation: animate 2s ease-in-out infinite;
+  }
+
+  #ResourcesHead h2 {
+    font-size: 65px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(20%, 350%);
   }
 
   .view {
@@ -477,7 +544,7 @@ body {
     color: #ffc107;
     animation: animate 2s ease-in-out infinite;
   }
-  
+
   #MusicHead h2 {
     font-size: 80px;
     font-weight: bold;
@@ -491,6 +558,14 @@ body {
     animation: animate 2s ease-in-out infinite;
   }
 
+  #ResourcesHead h2 {
+    font-size: 65px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(10%, 300%);
+  }
+
   .view {
     display: none;
   }
@@ -501,22 +576,29 @@ body {
 }
 
 @media only screen and (max-width: 350px) {
-
   #bioHead h2 {
-      font-size: 43px;
-      font-weight: bold;
-      position: absolute;
-      color: #ffc107;
-      transform: translate(-5%, 270%);
-    }
+    font-size: 43px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(-5%, 270%);
+  }
 
   #MusicHead h2 {
-      font-size: 80px;
-      font-weight: bold;
-      position: absolute;
-      color: #ffc107;
-      transform: translate(-43%, 150%);
-    }
+    font-size: 80px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(-43%, 150%);
+  }
+
+  #ResourcesHead h2 {
+    font-size: 55px;
+    font-weight: bold;
+    position: absolute;
+    color: #ffc107;
+    transform: translate(12%, 250%);
+  }
 
   #resume .container {
     display: flex;
