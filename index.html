@@ -855,7 +855,8 @@
               <p>
                 C# Console App
                 <br />
-                ATM-like software that asks for card, pin and gives options on operations like deposit, withdraw and check balance
+                ATM-like software that asks for card, pin and gives options on
+                operations like deposit, withdraw and check balance
               </p>
               <button class="btn-sm btn-secondary t-2">
                 <a
@@ -923,8 +924,8 @@
           >
             <div class="accordion-body">
               <p>
-                
-                RESTful Web API for MOVIES using ASP.NET Core 6.0 and Entity Framework Core 
+                RESTful Web API for MOVIES using ASP.NET Core 6.0 and Entity
+                Framework Core
               </p>
               <button class="btn-sm btn-secondary t-2">
                 <a
@@ -957,6 +958,167 @@
           <br /><a href="mailto:patriziomilione@gmail.com" id="contact-mail"
             ><i class="bi bi-envelope-fill"></i> patriziomilione@gmail.com</a
           >
+        </div>
+      </div>
+    </div>
+
+    <!-- Contact Form -->
+    <div
+      class="flex items-center min-h-screen bg-gray-100 dark:bg-gray-900"
+      style="
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      "
+    >
+      <div class="container mx-auto">
+        <div
+          style="
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+          "
+          class="max-w-xl mx-auto my-10 bg-dark text-center text-light p-5 rounded-md shadow-sm"
+        >
+          <div class="text-center">
+            <h1
+              class="my-3 text-3xl font-semibold text-gray-700 dark:text-gray-200"
+            >
+              Contact Us
+            </h1>
+            <p class="text-gray-400 dark:text-gray-400">
+              Fill up the form below to send me a message.
+            </p>
+          </div>
+          <div
+            style="min-height: 15rem; width: 100%"
+            class="m-5 p-4 d-flex flex-column"
+          >
+            <form
+              action="https://api.web3forms.com/submit"
+              method="POST"
+              id="form"
+              class="input-group-text d-flex flex-column bg-dark align-items-center justify-content-center text-center"
+              style="
+                min-height: 20rem;
+                display: flex;
+                justify-content: center;
+                align-items: center;
+                flex-direction: column;
+              "
+            >
+              <input
+                type="hidden"
+                name="access_key"
+                value="845071fb-deea-4c8c-9c23-31fc136e1a4e"
+              />
+              <input
+                type="hidden"
+                name="subject"
+                value="New Submission from Web3Forms"
+              />
+              <input
+                type="checkbox"
+                name="botcheck"
+                id=""
+                style="display: none"
+              />
+
+              <div class="flex mb-6 space-x-4 m-2">
+                <div class="w-full md:w-1/2">
+                  <label
+                    for="fname"
+                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                    >First Name</label
+                  >
+                  <input
+                    type="text"
+                    name="name"
+                    id="first_name"
+                    placeholder="John"
+                    required
+                    class="bg-light w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  />
+                </div>
+                <div class="w-full md:w-1/2 m-2">
+                  <label
+                    for="lname"
+                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                    >Last Name</label
+                  >
+                  <input
+                    type="text"
+                    name="last_name"
+                    id="lname"
+                    placeholder="Lennon"
+                    required
+                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  />
+                </div>
+              </div>
+
+              <div class="flex mb-6 space-x-4">
+                <div class="w-full md:w-1/2 m-2">
+                  <label
+                    for="email"
+                    class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                    >Email Address</label
+                  >
+                  <input
+                    type="email"
+                    name="email"
+                    id="email"
+                    placeholder="you@company.com"
+                    required
+                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  />
+                </div>
+
+                <div class="w-full md:w-1/2 m-2">
+                  <label
+                    for="phone"
+                    class="block text-sm mb-2 text-gray-600 dark:text-gray-400"
+                    >Phone Number</label
+                  >
+                  <input
+                    type="text"
+                    name="phone"
+                    id="phone"
+                    placeholder="+39 (555) 1234567"
+                    required
+                    class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  />
+                </div>
+              </div>
+              <div class="mb-6 m-2">
+                <label
+                  for="message"
+                  class="block mb-2 text-sm text-gray-600 dark:text-gray-400"
+                  >Your Message</label
+                >
+
+                <textarea
+                  rows="5"
+                  name="message"
+                  id="message"
+                  placeholder="Your Message"
+                  class="w-full px-3 py-2 placeholder-gray-300 border border-gray-300 rounded-md focus:outline-none focus:ring focus:ring-indigo-100 focus:border-indigo-300 dark:bg-gray-700 dark:text-white dark:placeholder-gray-500 dark:border-gray-600 dark:focus:ring-gray-900 dark:focus:border-gray-500"
+                  required
+                ></textarea>
+              </div>
+              <div class="mb-6">
+                <button
+                  type="submit"
+                  class="btn btn-warning w-full px-3 py-4 text-white bg-indigo-500 rounded-md focus:bg-indigo-600 focus:outline-none"
+                >
+                  Send Message
+                </button>
+              </div>
+              <p class="text-base text-center text-gray-400" id="result"></p>
+            </form>
+          </div>
         </div>
       </div>
     </div>
